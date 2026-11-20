@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /dwa2/practica_daw2_producto/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
